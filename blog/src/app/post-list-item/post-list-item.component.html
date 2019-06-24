@@ -1,0 +1,14 @@
+<li [ngClass]="{'list-group-item': true,
+  'list-group-item-success': numberLike > 0,
+  'list-group-item-danger': numberLike < 0}">
+
+  <h1>{{title}}</h1><p> {{creationDate | date }}</p>
+  <p>{{content}}</p>
+  <p> nombre de like : {{numberLike}}</p>
+  <button class="btn btn-success" 
+    (click)="increment()">Love it</button>&nbsp;
+  <button class="btn btn-danger" 
+    (click)="decrement()">Don't Love it</button>
+  
+  
+</li>
